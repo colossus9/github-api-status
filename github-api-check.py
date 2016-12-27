@@ -24,9 +24,12 @@ try:
     print str(body)
 except HTTPError as e:
     print 'ERROR: HTTPError Exception thrown; ' + str(e)
-    sys.exit(code)
+    sys.exit(1)
 except URLError as e:
     print 'ERROR: URLError Exception thrown; ' + str(e)
-    sys.exit(code)
+    sys.exit(1)
+except:
+    print 'ERROR: Exception thrown'
+    sys.exit(1)
 else:
     print 'GitHub API Check PASSED'
