@@ -1,2 +1,2 @@
 # github-api-status
-Check the API Status for GitHub
+Check the API Status for GitHub using Travis CI
