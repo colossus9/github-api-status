@@ -13,7 +13,7 @@ except:
 # Build Request Object
 url = 'https://status.github.com/api/status.json'
 print 'Checking url \'' + str(url) + '\''
-request = Request()
+request = Request(url)
 
 # Check the response
 try:
