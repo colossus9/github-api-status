@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python apitest.py
+python github-api-check.py
