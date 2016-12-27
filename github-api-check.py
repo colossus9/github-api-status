@@ -17,8 +17,9 @@ request = Request(url)
 
 # Check the response
 try:
-    response = urlopen(request)    
-    print str(response)
+    response = urlopen(request)
+    body = json.load(response)   
+    print str(body)
 except HTTPError as e:
     print 'ERROR: HTTPError Exception thrown; ' + str(e)
     sys.exit(code)
