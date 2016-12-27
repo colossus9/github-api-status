@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import json
+
 print 'Checking GitHub API Status...'
 
 # Load appropriate HTTP libs
